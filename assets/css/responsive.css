@@ -8,12 +8,22 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-   
+   .card-wrapper {
+    grid-gap: 15px;
+}
+.card-box {
+    padding: 10px;
+
+}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
-   
+   .card-wrapper {
+    grid-template-columns: 60%;
+    justify-content: center;
+    grid-gap: 50px;
+}
 }
 
 /* Extra small devices (portrait phones, less than 768px) */

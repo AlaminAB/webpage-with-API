@@ -339,3 +339,50 @@ footer {
     font-size: 15px;
 }
 /************** Template CSS End **************/
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+   .card-wrapper {
+    grid-gap: 15px;
+}
+.card-box {
+    padding: 10px;
+
+}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  header, section, main, footer {
+    width: 100%;
+    margin: 0 auto;
+}
+   .card-wrapper {
+    grid-template-columns: 60%;
+    justify-content: center;
+    grid-gap: 50px;
+}
+   footer {
+    grid-template-columns: 60%;
+    justify-content: center;
+    grid-gap: 38px;
+}
+}
+
+/* Extra small devices (portrait phones, less than 768px) */
+@media (max-width: 767.98px) { 
+   
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media  (max-width: 576.98px) { 
+.card-wrapper {
+    grid-template-columns: 90%;
+    justify-content: center;
+    grid-gap: 30px;
+}
+footer {
+    grid-template-columns: 90%;
+    grid-gap: 30px;
+}
+}
