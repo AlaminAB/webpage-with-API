@@ -292,7 +292,7 @@ main {
 /* footer  */
 footer {
     background: #0984e3;
-    padding: 30px 25px;
+    padding: 50px 25px;
     display: grid;
     grid-template-columns: 32% 32% 32%;
 }
