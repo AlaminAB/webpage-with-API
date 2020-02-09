@@ -186,9 +186,11 @@ main {
 .heading h2 {
     color: #000;
     text-align: center;
+    margin: 0;
     line-height: 30px;
     padding-bottom: 30px;
     position: relative;
+    margin-bottom: 15px;
 }
 .heading h2:after {
     position: absolute;
@@ -302,7 +304,7 @@ footer {
 }
 
 .footer-box h4 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     color: #fff;
     margin-bottom: 21px;
@@ -384,5 +386,29 @@ footer {
 footer {
     grid-template-columns: 90%;
     grid-gap: 30px;
+}
+.news-letter-section {
+    width: 84%;
+}
+.heading h2:after {
+    width: 70%;
+  }
+  .overly-text h2 {
+    text-align: center;
+    line-height: 29px;
+    font-size: 25px;
+  }
+  nav {
+    padding: 15px 15px;
+}
+nav ul li {
+    padding: 8px 5px;
+}
+
+.heading h2 {
+    font-size: 26px;
+}
+main {
+    padding: 20px 0px;
 }
 }
