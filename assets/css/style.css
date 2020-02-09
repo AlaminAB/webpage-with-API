@@ -1,0 +1,341 @@
+/*
+  Theme Name: 
+  Author: 
+  Support: 
+  Description: 
+  Version: 1.0
+*/
+
+/* CSS Index 
+-----------------------------------
+01.
+02.
+03.
+04.
+05.
+06.
+07.
+08.
+09.
+10.
+-----------------------------------
+CSS Index End */
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+/* 
+  font-family: 'Roboto', sans-serif;
+  
+*/
+
+
+/************** Default CSS **************/
+:root {
+  --body: #252527;
+  --p: #fff;
+  --a: #fff;
+  --h: #000;
+  --dark: #1F1F20;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background-color:#fff;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+.button,
+button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #74b9ff;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--h);
+  text-transform: capitalize;
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--p);
+  margin-bottom: 15px;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  color: var(--a);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/************** Default CSS End **************/
+
+
+/************** Template CSS **************/
+header,section,main,footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* navbar css  */
+nav {
+    background: #0984e3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 8px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+}
+.logo a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    font-family: 'Russo One', sans-serif;
+}
+
+
+
+/* main  */
+main {
+    padding: 60px 0px;
+}
+.heading h2 {
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.heading h2:after {
+    position: absolute;
+    content: "";
+    width: 14%;
+    height: 3px;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #ffff 0%, rgb(9, 132, 227) 60%, #ffff 100%);
+}
+.card-wrapper{
+  display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 27px;
+    
+}
+.card-box {
+    background: #0984e3;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card-description p {
+    line-height: 13px;
+    font-size: 15px;
+    border-bottom: 1px solid #0000001c;
+    padding-bottom: 2px;
+}
+.card-description span{
+  text-transform: capitalize;
+}
+
+.box-img img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card-description p span:first-child {
+    background: #6c5ce7;
+    display: inline-block;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 8px;
+}
+.button-all button {
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1px solid #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.button-all {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.button-all button:hover {
+    background: #74b9ff;
+    border: 1px solid #74b9ff;
+    color: #000000e8;
+}
+/* banner img  */
+.banner {
+    width: 100%;
+    /* height: 360px; */
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 34.5%;
+}
+.overly-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:999;
+}
+
+.overly-text h2 {
+    color: #fff;
+    font-weight: bold;
+     font-family: 'Russo One', sans-serif;
+     letter-spacing: 4px;
+}
+
+.banner:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000085;
+    content: "";
+}
+
+/* footer  */
+footer {
+    background: #0984e3;
+    padding: 30px 25px;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+}
+
+.footer-des {
+    width: 76%;
+}
+
+.footer-box h4 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 21px;
+}
+
+.footer-box p {
+    line-height: 24px;
+}
+
+.api-link ul li {padding-bottom: 6px;}
+
+.api-link ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.footer-box form {
+    width: 100%;
+    display: flex;
+}
+
+.footer-box form input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.footer-box form button {
+    padding: 8px 13px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin-left: 10px;
+    font-size: 15px;
+}
+/************** Template CSS End **************/
