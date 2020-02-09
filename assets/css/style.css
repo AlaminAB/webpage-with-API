@@ -1,23 +1,17 @@
 /*
-  Theme Name: 
-  Author: 
-  Support: 
-  Description: 
+  Author: americanepal
+  Support: americanepal@gmail.com
+  Description: Learning Project 
   Version: 1.0
 */
 
 /* CSS Index 
 -----------------------------------
-01.
-02.
-03.
-04.
-05.
-06.
-07.
-08.
-09.
-10.
+01. Header 
+02. Banner
+03. Team member
+04. Footer
+
 -----------------------------------
 CSS Index End */
 
@@ -294,15 +288,18 @@ main {
 /* footer  */
 footer {
     background: #0984e3;
-    padding: 50px 25px;
+    padding: 50px 0px;
     display: grid;
     grid-template-columns: 32% 32% 32%;
 }
 
 .footer-des {
     width: 76%;
+    padding-left: 25px;
 }
-
+.footer-logo {
+    padding-left: 25px;
+}
 .footer-box h4 {
     font-size: 20px;
     font-weight: 500;
@@ -340,7 +337,19 @@ footer {
     margin-left: 10px;
     font-size: 15px;
 }
+.copyright {
+    background: #0984e3;
+    padding: 3px 0px;
+    text-align: center;
+    border-top: 1px solid #0000002e;
+}
 /************** Template CSS End **************/
+
+
+
+
+
+
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 

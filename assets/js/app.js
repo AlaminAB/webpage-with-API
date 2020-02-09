@@ -2,7 +2,7 @@
 
 
 $(document).ready(function(){
-// for banner img 
+// load it for banner img 
    $.ajax({url: "https://randomuser.me/api/", success: function(result){
       // insert API value in html tag 
       $(".banner").css("background-image", "url(" + result.results[0].picture.large + ")");
@@ -22,7 +22,8 @@ $(document).ready(function(){
 
 
 
-// button 2
+// *********  card one img name etc load form here ************
+// button 1
  $.ajax({url: "https://randomuser.me/api/", success: function(result){
       // insert API value in html tag 
         $('.img-src1').attr('src',result.results[0].picture.large);
@@ -32,6 +33,7 @@ $(document).ready(function(){
       $(".email1").html(result.results[0].email);
     }});
 
+ // button 
    $(".button1 > button").click(function(){
      $.ajax({url: "https://randomuser.me/api/", success: function(result){
       // insert API value in html tag 
@@ -44,6 +46,8 @@ $(document).ready(function(){
    })
 
 
+
+// *********  card two img name etc load form here ************
 
 // button 2
  $.ajax({url: "https://randomuser.me/api/", success: function(result){
@@ -68,6 +72,7 @@ $(document).ready(function(){
   
 
 
+// *********  card three img name etc load form here ************
 
 // button 3
  $.ajax({url: "https://randomuser.me/api/", success: function(result){
