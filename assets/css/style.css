@@ -33,6 +33,9 @@ CSS Index End */
   --h: #000;
   --dark: #1F1F20;
 }
+*{
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
